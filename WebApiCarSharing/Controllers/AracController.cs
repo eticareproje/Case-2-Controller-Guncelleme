@@ -16,7 +16,7 @@ namespace WebApiCarSharing.Controllers
     {
         private RentACarEntities db = new RentACarEntities();
 
-        // GET: api/Aracaa
+        // GET: api/Aracaaf
         public IQueryable<Arac> GetArac()
         {
             return db.Arac;
