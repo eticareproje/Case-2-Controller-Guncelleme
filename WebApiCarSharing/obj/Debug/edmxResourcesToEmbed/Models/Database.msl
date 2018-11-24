@@ -100,7 +100,6 @@
       <EntityTypeMapping TypeName="RentACarModel.UyeBilgi">
         <MappingFragment StoreEntitySet="UyeBilgi">
           <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="Apikey" ColumnName="Apikey" />
           <ScalarProperty Name="Role" ColumnName="Role" />
           <ScalarProperty Name="Adi" ColumnName="Adi" />
           <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />

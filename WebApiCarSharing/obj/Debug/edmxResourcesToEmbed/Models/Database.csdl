@@ -104,8 +104,7 @@
       <PropertyRef Name="UserId" />
     </Key>
     <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Apikey" Type="Guid" Nullable="false" />
-    <Property Name="Role" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
     <Property Name="Adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Soyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="DogumTarihi" Type="DateTime" Nullable="false" Precision="0" />
@@ -116,9 +115,9 @@
     <Property Name="TC" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="Telefon" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="UyeKayitTarihi" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="Deneyim" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="YapilanYolculukSayisi" Type="Int16" Nullable="false" />
-    <Property Name="MusteriPuan" Type="Byte" Nullable="false" />
+    <Property Name="Deneyim" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="YapilanYolculukSayisi" Type="Int16" />
+    <Property Name="MusteriPuan" Type="Byte" />
     <NavigationProperty Name="Adres" Relationship="Self.Adres_UyeBilgi_UserId" FromRole="UyeBilgi" ToRole="Adres" />
     <NavigationProperty Name="Arac" Relationship="Self.FK_Arac_UyeBilgi" FromRole="UyeBilgi" ToRole="Arac" />
     <NavigationProperty Name="Odemeler" Relationship="Self.FK_Odemeler_UyeBilgi" FromRole="UyeBilgi" ToRole="Odemeler" />

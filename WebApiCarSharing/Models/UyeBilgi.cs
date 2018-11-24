@@ -26,7 +26,6 @@ namespace WebApiCarSharing.Models
         }
     
         public int UserId { get; set; }
-        public System.Guid Apikey { get; set; }
         public string Role { get; set; }
         public string Adi { get; set; }
         public string Soyadi { get; set; }
@@ -39,8 +38,8 @@ namespace WebApiCarSharing.Models
         public string Telefon { get; set; }
         public System.DateTime UyeKayitTarihi { get; set; }
         public string Deneyim { get; set; }
-        public short YapilanYolculukSayisi { get; set; }
-        public byte MusteriPuan { get; set; }
+        public Nullable<short> YapilanYolculukSayisi { get; set; }
+        public Nullable<byte> MusteriPuan { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Adres> Adres { get; set; }

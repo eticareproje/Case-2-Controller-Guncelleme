@@ -19,20 +19,30 @@ namespace WebApiCarSharing.Controllers
         // GET: api/UyeBilgi
         public IQueryable<UyeBilgi> GetUyeBilgi()
         {
+           
             return db.UyeBilgi;
         }
 
         // GET: api/UyeBilgi/5
         [ResponseType(typeof(UyeBilgi))]
-        public IHttpActionResult GetUyeBilgi(int id)
+        public IHttpActionResult GetUyeBilgi(int id,string pass)
         {
             UyeBilgi uyeBilgi = db.UyeBilgi.Find(id);
             if (uyeBilgi == null)
             {
                 return NotFound();
             }
-
+            if(uyeBilgi.Sifre==pass)
+            {
             return Ok(uyeBilgi);
+
+             }
+            else
+            { 
+               return NotFound();
+             }
+           
+            
         }
 
         // PUT: api/UyeBilgi/5
