@@ -121,7 +121,6 @@
     <Compile Include="Controllers\OdemelerController.cs" />
     <Compile Include="Controllers\OnayController.cs" />
     <Compile Include="Controllers\ResimController.cs" />
-    <Compile Include="Controllers\UyeBilgi3Controller.cs" />
     <Compile Include="Controllers\UyeBilgiController.cs" />
     <Compile Include="Controllers\YolculukController.cs" />
     <Compile Include="Global.asax.cs">
