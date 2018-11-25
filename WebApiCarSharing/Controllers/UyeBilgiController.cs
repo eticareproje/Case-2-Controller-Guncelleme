@@ -16,7 +16,7 @@ namespace WebApiCarSharing.Controllers
     {
         private RentACarEntities db = new RentACarEntities();
 
-        // GET: api/UyeBilgi
+        // GET: api/UyeBilgiss
         public IQueryable<UyeBilgi> GetUyeBilgi()
         {
            
