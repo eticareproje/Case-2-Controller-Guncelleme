@@ -79,7 +79,6 @@ namespace WebApiCarSharing.Controllers
                 return BadRequest(ModelState);
             }
 
-
             db.Arac.Add(arac);
             db.SaveChanges();
 

@@ -12,11 +12,11 @@ using WebApiCarSharing.Models;
 
 namespace WebApiCarSharing.Controllers
 {
-    public class UyeBilgiController : ApiController
+    public class UyeBilgiController : ApiController 
     {
         private RentACarEntities db = new RentACarEntities();
 
-        // GET: api/UyeBilgi
+        // GET: api/UyeBilgiss
         public IQueryable<UyeBilgi> GetUyeBilgi()
         {
            
